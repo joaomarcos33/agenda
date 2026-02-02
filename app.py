@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+
 from models.tarefa import Tarefa
 
 app = Flask(__name__)
@@ -16,6 +17,7 @@ def agenda():
         titulo_tarefa = request.form['titulo-tarefa']
         data_conclusao = request.form['data-conclusao']
         tarefa = Tarefa(titulo_tarefa, data_conclusao)
+        tarefa.salvar_tarefa()
 
     return render_template('agenda.html', titulo='Agenda', tarefa=tarefa)
 
