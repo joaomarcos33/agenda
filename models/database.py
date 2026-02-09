@@ -1,12 +1,14 @@
 from sqlite3 import Connection, connect, Cursor
-from typing import Any
+from types import Traceback
+from typing import Optional, Self, Type
+from typing import Any, Optional, Self, Type
 
 class Database:
     def __init__(self, db_name: str) -> None :
         self.connection: Connection = connect(db_name)
         self.cursor: Cursor = self.connection.cursor()
 
-    def executar(self, query: str, params: tuple = ()) -> Cursor:
+    def executa (self, query: str, params: tuple = ()) -> Cursor:
         self.cursor.execute(query, params)
         self.connection.commit()
         return self.cursor
@@ -21,11 +23,21 @@ class Database:
     # Métodos para o gerenciamento de contexto
 
     #Método de entrada do contexto 
-    def __enter__(self):
+    def __enter__(self) -> self:
         return self
 
     # Método de saída do contexto 
-    def __exit__(self, exc_type, exc_value, traceback):
+    def __exit__(self, 
+    exc_type, Optional[type[BaseException]],
+    exc_value: Optional[BaseException], 
+    tb: Optional[traceback]) -> None:
+
+        print('exeção capturada no contexto:')
+        print(f'Tipo: {exc_type.__name__}')
+        print(f'mensagem: {exc_value}')
+        print('Traceback completo')
+        Traceback.print_tb(tb)
+
         self.close()
 
 
@@ -41,5 +53,3 @@ class Database:
 #     db.executar(" INSERT INTO tarefas (titulo_tarefa, data_conclusao) VALUES (?, ?);", ("Estudar Python", "2026-01-29"))
 # except Exception as e:
 #     print(f"Erro ao criar tabela: {e}")
-# finally:
-#     db.close()
