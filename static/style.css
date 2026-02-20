@@ -1,0 +1,187 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.container-principal {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Card do formulário */
+.form-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.form-card input {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-card input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+.form-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-save, .btn-update, .btn-concluir, .btn-reabrir, .btn-delete, .btn-cancel {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-save {
+    background: #28a745;
+    color: white;
+}
+
+.btn-save:hover {
+    background: #218838;
+}
+
+.btn-update {
+    background: #007bff;
+    color: white;
+}
+
+.btn-update:hover {
+    background: #0069d9;
+}
+
+.btn-concluir {
+    background: #6f42c1;
+    color: white;
+}
+
+.btn-concluir:hover {
+    background: #5a32a3;
+}
+
+.btn-reabrir {
+    background: #fd7e14;
+    color: white;
+}
+
+.btn-reabrir:hover {
+    background: #e06c00;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #c82333;
+}
+
+.btn-cancel {
+    background: #6c757d;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-cancel:hover {
+    background: #5a6268;
+}
+
+/* Lista de tarefas */
+.tarefa-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+
+.tarefa-card h2 {
+    margin-bottom: 24px;
+    color: #333;
+    font-size: 24px;
+}
+
+.tarefa-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s;
+}
+
+.tarefa-item:last-child {
+    border-bottom: none;
+}
+
+.tarefa-item:hover {
+    background: #f8f9fa;
+}
+
+.tarefa-concluida {
+    background: #f1f8ff;
+    opacity: 0.85;
+}
+
+.tarefa-texto {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.tarefa-texto s {
+    color: #6c757d;
+}
+
+.tarefa-texto small {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+.tarefa-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tarefa-actions a {
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+/* Mensagem vazia */
+.espaco-de-tarefas {
+    text-align: center;
+    padding: 40px;
+    color: #6c757d;
+    font-size: 1.1em;
+}
