@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Agenda em Python usando o Flask
 
 Este é um projeto de uma agenda simples desenvolvida em Python utilizando o framework Flask. A aplicação permite aos usuários criar, visualizar, editar e excluir compromissos. Usando conceitos como padrão de pojetos MVC (Model-View-Controller), frameworks Flask e seus componentes, variáveis de ambiente, paradigmas de programação orientada a objetos e reforço de fundamentos de linguagem Python.
@@ -55,3 +56,9 @@ constante `DATABASE`. Exemplo:
 `http://127.0.0.1:5000`
 
 
+=======
+.venv/
+
+__pycache__/
+*.pyc
+>>>>>>> 3fe41711b7def938ae64d9112b9f812fc570b108

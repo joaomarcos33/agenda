@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="pt-BR">
+=======
+<html lang="pt-br">
+>>>>>>> 3fe41711b7def938ae64d9112b9f812fc570b108
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +11,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+<<<<<<< HEAD
     <h1>{{ titulo }}</h1>
     {%block content%} {%endblock%}
+=======
+
+    <div class="pagina">
+        <h1>{{ titulo }}</h1>
+
+        {% block content %}{% endblock %}
+    </div>
+
+>>>>>>> 3fe41711b7def938ae64d9112b9f812fc570b108
 </body>

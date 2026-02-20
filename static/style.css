@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 /* Reset básico */
+=======
+>>>>>>> 3fe41711b7def938ae64d9112b9f812fc570b108
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 body {
@@ -185,3 +189,122 @@ body {
     color: #6c757d;
     font-size: 1.1em;
 }
+=======
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 106, 0, 0.8), rgba(238, 9, 121, 0.7));
+}
+.container {
+    text-align: center;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Botões do formulário */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #43a047;
+    transform: scale(1.05);
+}
+
+/* Botão “Ir para agenda” estilizado diferente */
+.btn-agenda {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #2196f3; /* azul diferente do verde */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 8px rgba(33, 150, 243, 0.5);
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.btn-agenda:hover {
+    background-color: #1769aa;
+    transform: scale(1.07);
+    box-shadow: 0 7px 12px rgba(23, 105, 170, 0.7);
+}
+
+/* Tarefas */
+.tarefa {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e3f2fd;
+    border-left: 5px solid #2196f3;
+    border-radius: 5px;
+}
+.btn-personalizado {
+    position: relative;
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow:
+        0 4px 15px rgba(255, 106, 0, 0.6),
+        0 8px 30px rgba(238, 9, 121, 0.4);
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-personalizado::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.4), transparent 70%);
+    transform: translateX(-100%) rotate(45deg);
+    transition: transform 0.7s ease;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(10px);
+}
+
+.btn-personalizado:hover::before {
+    transform: translateX(100%) rotate(45deg);
+}
+
+.btn-personalizado:hover {
+    box-shadow:
+        0 6px 20px rgba(255, 106, 0, 0.8),
+        0 12px 40px rgba(238, 9, 121, 0.7);
+    transform: scale(1.1);
+}
+>>>>>>> 3fe41711b7def938ae64d9112b9f812fc570b108
