@@ -1,27 +1,6 @@
-
-{% extends "base.html" %} <!--Herdar todas as carateristicas de base.hmlt-->
+{% extends "base.html" %}
 
 {% block content %}
-    <div class="home">
-        <p>Seja bem-vindo!</p>
-        <a href="/agenda" class="link-agenda">Agenda</a>
-    </div>
+    <p class="para">Seja bem-vindo!</p>
+    <a href="/agenda" class="botao-Agenda">Agenda</a>
 {% endblock %}
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ titulo }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-
-    <div class="pagina">
-        <h1>{{ titulo }}</h1>
-
-        {% block content %}{% endblock %}
-    </div>
-
-</body>
-

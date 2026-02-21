@@ -1,310 +1,203 @@
-<<<<<<< HEAD
-/* Reset básico */
-=======
->>>>>>> 3fe41711b7def938ae64d9112b9f812fc570b108
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Container principal */
-.container-principal {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-/* Card do formulário */
-.form-card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    padding: 30px;
-    margin-bottom: 40px;
-}
-
-.form-card input {
-    width: 100%;
-    padding: 14px 16px;
-    margin-bottom: 16px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-}
-
-.form-card input:focus {
-    outline: none;
-    border-color: #4a90e2;
-    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
-}
-
-.form-buttons {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #262626;
+    min-height: 100vh;
     display: flex;
-    gap: 12px;
-}
-
-.btn-save, .btn-update, .btn-concluir, .btn-reabrir, .btn-delete, .btn-cancel {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.btn-save {
-    background: #28a745;
-    color: white;
-}
-
-.btn-save:hover {
-    background: #218838;
-}
-
-.btn-update {
-    background: #007bff;
-    color: white;
-}
-
-.btn-update:hover {
-    background: #0069d9;
-}
-
-.btn-concluir {
-    background: #6f42c1;
-    color: white;
-}
-
-.btn-concluir:hover {
-    background: #5a32a3;
-}
-
-.btn-reabrir {
-    background: #fd7e14;
-    color: white;
-}
-
-.btn-reabrir:hover {
-    background: #e06c00;
-}
-
-.btn-delete {
-    background: #dc3545;
-    color: white;
-}
-
-.btn-delete:hover {
-    background: #c82333;
-}
-
-.btn-cancel {
-    background: #6c757d;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-cancel:hover {
-    background: #5a6268;
-}
-
-/* Lista de tarefas */
-.tarefa-card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    padding: 30px;
-}
-
-.tarefa-card h2 {
-    margin-bottom: 24px;
-    color: #333;
-    font-size: 24px;
-}
-
-.tarefa-item {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 16px 20px;
-    border-bottom: 1px solid #eee;
-    transition: background 0.2s;
+    padding: 40px 20px;
 }
 
-.tarefa-item:last-child {
-    border-bottom: none;
+.container-principal {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 20px 70px rgba(0,0,0,0.3);
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
 }
 
-.tarefa-item:hover {
-    background: #f8f9fa;
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
-.tarefa-concluida {
-    background: #f1f8ff;
-    opacity: 0.85;
-}
-
-.tarefa-texto {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.tarefa-texto s {
-    color: #6c757d;
-}
-
-.tarefa-texto small {
-    color: #6c757d;
-    font-size: 0.9em;
-}
-
-.tarefa-actions {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.tarefa-actions a {
-    padding: 8px 16px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 0.95em;
+/*home inicio da paggina*/
+.para {
+    font-size: 28px;
+    color: #262626;
+    margin-bottom: 30px;
     font-weight: 500;
 }
 
-/* Mensagem vazia */
-.espaco-de-tarefas {
-    text-align: center;
-    padding: 40px;
-    color: #6c757d;
-    font-size: 1.1em;
-}
-=======
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, rgba(255, 106, 0, 0.8), rgba(238, 9, 121, 0.7));
-}
-.container {
-    text-align: center;
+.botao-Agenda {
+    display: inline-block;
+    padding: 16px 48px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(220,39,67,0.4);
+    transition: all 0.3s;
 }
 
+.botao-Agenda:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(220,39,67,0.5);
+}
 
 
 form {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
 }
 
-input, button {
-    padding: 10px;
-    font-size: 14px;
-}
-
-/* Botões do formulário */
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    background-color: #43a047;
-    transform: scale(1.05);
-}
-
-/* Botão “Ir para agenda” estilizado diferente */
-.btn-agenda {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #2196f3; /* azul diferente do verde */
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+.titulo, .data {
+    flex: 1;
+    min-width: 280px;
+    padding: 16px 20px;
+    border: 2px solid #dbdbdb;
     border-radius: 12px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
-    box-shadow: 0 5px 8px rgba(33, 150, 243, 0.5);
-    margin-top: 15px;
     font-size: 16px;
+    background: white;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
 }
 
-.btn-agenda:hover {
-    background-color: #1769aa;
-    transform: scale(1.07);
-    box-shadow: 0 7px 12px rgba(23, 105, 170, 0.7);
+.titulo:focus, .data:focus {
+    border-color: #0095f6;
+    outline: none;
+    box-shadow: 0 0 0 5px rgba(0,149,246,0.2);
 }
 
-/* Tarefas */
-.tarefa {
-    margin-top: 20px;
-    padding: 10px;
-    background: #e3f2fd;
-    border-left: 5px solid #2196f3;
-    border-radius: 5px;
-}
-.btn-personalizado {
-    position: relative;
-    display: inline-block;
-    padding: 15px 35px;
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-    background: linear-gradient(45deg, #ff6a00, #ee0979);
+form button[type="submit"] {
+    padding: 16px 48px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743);
+    color: white;
     border: none;
-    border-radius: 50px;
-    text-decoration: none;
-    box-shadow:
-        0 4px 15px rgba(255, 106, 0, 0.6),
-        0 8px 30px rgba(238, 9, 121, 0.4);
-    overflow: hidden;
-    transition: all 0.4s ease;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 600;
     cursor: pointer;
-    user-select: none;
+    box-shadow: 0 8px 20px rgba(220,39,67,0.4);
+    transition: all 0.3s;
 }
 
-.btn-personalizado::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at center, rgba(255,255,255,0.4), transparent 70%);
-    transform: translateX(-100%) rotate(45deg);
-    transition: transform 0.7s ease;
-    border-radius: 50%;
-    pointer-events: none;
-    filter: blur(10px);
+form button[type="submit"]:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(220,39,67,0.5);
 }
 
-.btn-personalizado:hover::before {
-    transform: translateX(100%) rotate(45deg);
+/* Lista de tarefas */
+h2 {
+    font-size: 32px;
+    color: #262626;
+    margin: 50px 0 30px;
 }
 
-.btn-personalizado:hover {
-    box-shadow:
-        0 6px 20px rgba(255, 106, 0, 0.8),
-        0 12px 40px rgba(238, 9, 121, 0.7);
-    transform: scale(1.1);
+ul {
+    list-style: none;
+    padding: 0;
 }
->>>>>>> 3fe41711b7def938ae64d9112b9f812fc570b108
+
+.tarefa-finalizada {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin: 20px 0;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tarefa-concluida {
+    background: #e8f5e9;
+    opacity: 0.9;
+}
+
+.tarefa-finalizada span {
+    flex: 1;
+    font-size: 18px;
+    text-align: left;
+}
+
+.tarefa-finalizada .btn {
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.25s;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tarefa-finalizada .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.btn.btn-primary {
+    background: #0095f6;
+    color: white;
+}
+
+.btn.btn-danger {
+    background: #ed4956;
+    color: white;
+}
+
+.btn.btn-success {
+    background: #0095f6;
+    color: white;
+}
+
+
+p {
+    text-align: center;
+    color: #8e8e8e;
+    font-size: 18px;
+    padding: 60px 0;
+    font-weight: 500;
+}
+
+
+@media (max-width: 600px) {
+    .container-principal {
+        padding: 30px 20px;
+    }
+
+    .tarefa-finalizada {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tarefa-finalizada .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
