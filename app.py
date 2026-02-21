@@ -1,9 +1,9 @@
+
 from flask import Flask, render_template, request, redirect, url_for
 from models.tarefa import Tarefa
 from models.database import Database
 
 app = Flask(__name__)
-app.static_folder = 'static' 
 
 @app.route('/')
 def home():
@@ -27,10 +27,10 @@ def delete(idTarefa):
     tarefa.excluir_tarefa()
     return redirect(url_for('agenda'))
 
-@app.route('/complete/<int:idTarefa>')
-def complete(idTarefa):
+@app.route('/toggle/<int:idTarefa>')
+def toggle(idTarefa):
     tarefa = Tarefa.id(idTarefa)
-    tarefa.completar_tarefa()
+    tarefa.toggle_concluir()
     return redirect(url_for('agenda'))
 
 @app.route('/update/<int:idTarefa>', methods=['GET', 'POST'])
